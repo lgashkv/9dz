@@ -45,12 +45,7 @@ re.sub(r'(\w+\s|,\s\w+\s)(\w+\s)',r'\1',some_string)
 #Я не понимаю, как перевести в верхний регистр. Ничего не помогло.
 
 some_words = 'Информационные технологии'
-words = re.findall(r'\b\w', some_words)
-print(words)
-list_03 = (str)
-list_03 = ' '.join(words)
-list_03.replace(' ', '')
-print(list_03)
+re.sub(str(re.findall(r'[a-z,а-я]',some_words)),'', some_words)
 
 
 
