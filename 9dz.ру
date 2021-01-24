@@ -42,10 +42,10 @@ re.sub(r'(\w+\s|,\s\w+\s)(\w+\s)',r'\1',some_string)
 
 
 #Напишите функцию, которая будет возвращать акроним по переданной в нее строке со словами.
-#Я не понимаю, как перевести в верхний регистр. Ничего не помогло.
-
+import re
 some_words = 'Информационные технологии'
-re.sub(str(re.findall(r'[a-z,а-я]',some_words)),'', some_words)
+sw = (some_words.title())
+re.sub(str(re.findall(r'[a-z,а-я]',sw)),'', some_words.title())
 
 
 
